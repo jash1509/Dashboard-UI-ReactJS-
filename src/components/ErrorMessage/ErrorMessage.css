@@ -1,0 +1,69 @@
+.error-card {
+  background: #FFF5F5;
+  border: 1px solid #FEB2B2;
+  border-radius: 12px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 480px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.error-card-icon-wrapper {
+  color: #E53E3E;
+  background: #FFF5F5;
+  padding: 12px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  box-shadow: 0 0 0 4px rgba(229, 62, 62, 0.1);
+  display: inline-flex;
+}
+
+.error-card-title {
+  color: #9B2C2C;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.error-card-message {
+  color: #742A2A;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.error-card-retry-btn {
+  background: #000080;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 128, 0.2);
+}
+
+.error-card-retry-btn:hover {
+  background: #000066;
+}
+
+.error-card-retry-btn:active {
+  transform: scale(0.98);
+}
+
+.retry-icon {
+  transition: transform 0.3s ease;
+}
+
+.error-card-retry-btn:hover .retry-icon {
+  transform: rotate(180deg);
+}

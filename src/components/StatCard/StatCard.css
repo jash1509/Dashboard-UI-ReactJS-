@@ -1,0 +1,75 @@
+.stat-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #FF9933;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-card-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-card-icon-wrapper {
+  background: rgba(0, 0, 128, 0.06);
+  color: #000080;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1F2937;
+  letter-spacing: -0.02em;
+}
+
+.stat-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.stat-card-change {
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.stat-card-change.positive {
+  color: #138808;
+  background: rgba(19, 136, 8, 0.1);
+}
+
+.stat-card-change.negative {
+  color: #DC2626;
+  background: rgba(220, 38, 38, 0.1);
+}
+
+.stat-card-subtitle {
+  color: #9CA3AF;
+}

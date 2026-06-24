@@ -1,0 +1,176 @@
+.chart-placeholder-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #000080; /* Navy Accent base */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chart-placeholder-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding-bottom: 12px;
+}
+
+.placeholder-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.placeholder-header-icon {
+  display: flex;
+  align-items: center;
+}
+
+.placeholder-header-icon.saffron-txt { color: #FF9933; }
+.placeholder-header-icon.navy-txt { color: #000080; }
+.placeholder-header-icon.green-txt { color: #138808; }
+
+.placeholder-card-body {
+  width: 100%;
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.placeholder-svg {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+.x-axis-lbl {
+  font-size: 10px;
+  fill: #6B7280;
+  font-weight: 600;
+}
+
+.bar-lbl {
+  font-size: 10px;
+  fill: #374151;
+  font-weight: 700;
+}
+
+.chart-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 0.75rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-dot.saffron { background-color: #FF9933; }
+.legend-dot.green { background-color: #138808; }
+
+.legend-indicator {
+  width: 12px;
+  height: 3px;
+  border-radius: 2px;
+  display: inline-block;
+}
+.legend-indicator.navy { background-color: #000080; }
+
+/* Cities progress lists styles */
+.cities-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.city-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.city-info {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.city-rank {
+  color: #9CA3AF;
+  width: 24px;
+}
+
+.city-name {
+  flex-grow: 1;
+  color: #1F2937;
+}
+
+.city-code {
+  font-size: 0.75rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.city-amount {
+  color: #000080;
+  font-weight: 700;
+}
+
+.city-progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  background-color: #E5E7EB;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.city-progress-bar-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 1s ease-out;
+}
+
+.generic-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 30px;
+  color: #9CA3AF;
+  text-align: center;
+}
+
+.placeholder-icon {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
