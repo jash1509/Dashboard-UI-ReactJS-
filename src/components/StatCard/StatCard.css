@@ -1,5 +1,6 @@
 .stat-card {
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -25,7 +26,7 @@
 .stat-card-title {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #6B7280;
+  color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -43,7 +44,7 @@
 .stat-card-value {
   font-size: 2rem;
   font-weight: 700;
-  color: #1F2937;
+  color: var(--text-primary);
   letter-spacing: -0.02em;
 }
 
@@ -55,9 +56,13 @@
 }
 
 .stat-card-change {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .stat-card-change.positive {

@@ -1,6 +1,7 @@
 .analytics-hero {
-  background: linear-gradient(135deg, rgba(255, 153, 51, 0.05) 0%, rgba(19, 136, 8, 0.05) 100%);
-  border-left: 5px solid #000080;
+  background: linear-gradient(135deg, rgba(255, 153, 51, 0.1) 0%, var(--bg-secondary) 50%, rgba(19, 136, 8, 0.1) 100%);
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--color-accent);
   border-radius: 12px;
   padding: 24px;
   box-shadow: var(--shadow-sm);
@@ -9,13 +10,13 @@
 .analytics-hero-title {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #1F2937;
+  color: var(--text-primary);
   margin-bottom: 8px;
 }
 
 .analytics-hero-subtitle {
   font-size: 0.95rem;
-  color: #4B5563;
+  color: var(--text-secondary);
   line-height: 1.5;
 }
 

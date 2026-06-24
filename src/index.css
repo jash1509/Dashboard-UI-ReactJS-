@@ -44,7 +44,7 @@
   --transition-speed: 0.3s;
 }
 
-:root.light {
+:root.dark {
   /* Dark Mode option (Aura / Night Theme) */
   --bg-primary: #0F172A;
   --bg-secondary: #1E293B;

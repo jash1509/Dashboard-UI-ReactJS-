@@ -1,6 +1,6 @@
 .hero-section {
-  background: linear-gradient(135deg, rgba(255, 153, 51, 0.08) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(19, 136, 8, 0.08) 100%);
-  border: 1px solid rgba(0, 0, 128, 0.08);
+  background: linear-gradient(135deg, rgba(255, 153, 51, 0.1) 0%, var(--bg-secondary) 50%, rgba(19, 136, 8, 0.1) 100%);
+  border: 1px solid var(--border-color);
   border-left: 6px solid #FF9933;
   border-radius: 16px;
   padding: 28px;
@@ -19,13 +19,13 @@
 .hero-title {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #1F2937;
+  color: var(--text-primary);
   letter-spacing: -0.03em;
 }
 
 .hero-subtitle {
   font-size: 1rem;
-  color: #4B5563;
+  color: var(--text-secondary);
   line-height: 1.6;
   max-width: 700px;
 }
@@ -121,7 +121,7 @@
 .insights-section-title {
   font-size: 1.25rem;
   font-weight: 800;
-  color: #1F2937;
+  color: var(--text-primary);
   letter-spacing: -0.02em;
 }
 
@@ -132,7 +132,8 @@
 }
 
 .insight-card {
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -193,12 +194,12 @@
 .insight-value {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1F2937;
+  color: var(--text-primary);
 }
 
 .insight-desc {
   font-size: 0.85rem;
-  color: #6B7280;
+  color: var(--text-secondary);
   line-height: 1.4;
   margin-top: 4px;
 }

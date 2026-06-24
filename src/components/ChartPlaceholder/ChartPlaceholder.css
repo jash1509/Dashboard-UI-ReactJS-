@@ -1,5 +1,6 @@
 .chart-placeholder-card {
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -27,7 +28,7 @@
 .placeholder-card-title {
   font-size: 1rem;
   font-weight: 700;
-  color: #1F2937;
+  color: var(--text-primary);
 }
 
 .placeholder-header-icon {
@@ -123,7 +124,7 @@
 
 .city-name {
   flex-grow: 1;
-  color: #1F2937;
+  color: var(--text-primary);
 }
 
 .city-code {
@@ -140,7 +141,7 @@
 .city-progress-bar-bg {
   width: 100%;
   height: 6px;
-  background-color: #E5E7EB;
+  background-color: var(--bg-tertiary);
   border-radius: 9999px;
   overflow: hidden;
 }

@@ -1,5 +1,6 @@
 .product-card {
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -64,7 +65,7 @@
 .product-card-name {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #1F2937;
+  color: var(--text-primary);
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;

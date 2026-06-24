@@ -199,23 +199,23 @@
 }
 
 /* Dark mode configurations for sidebar */
-:root.light .sidebar {
+:root.dark .sidebar {
   background: #1E293B;
   border-right-color: rgba(255, 255, 255, 0.08);
 }
-:root.light .brand-name, :root.light .sidebar-link {
+:root.dark .brand-name, :root.dark .sidebar-link {
   color: #94A3B8;
 }
-:root.light .sidebar-link:hover {
+:root.dark .sidebar-link:hover {
   background: rgba(255, 153, 51, 0.05);
   color: #FF9933;
 }
-:root.light .sidebar-link.active {
+:root.dark .sidebar-link.active {
   background: rgba(255, 153, 51, 0.1);
   color: #FF9933;
   border-left-color: #FF9933;
 }
-:root.light .sidebar-link.active .sidebar-link-icon {
+:root.dark .sidebar-link.active .sidebar-link-icon {
   color: #FF9933;
 }
 

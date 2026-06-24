@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--bg-glass);
   backdrop-filter: blur(10px);
   padding: 16px 20px;
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+  transition: background-color var(--transition-speed), border-color var(--transition-speed);
 }
 
 .table-title-area {
@@ -19,12 +20,12 @@
 .table-main-title {
   font-size: 1.15rem;
   font-weight: 800;
-  color: #1F2937;
+  color: var(--text-primary);
 }
 
 .table-subtitle {
   font-size: 0.85rem;
-  color: #6B7280;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
@@ -39,17 +40,17 @@
   width: 100%;
   padding: 10px 16px 10px 40px;
   border-radius: 9999px;
-  border: 1.5px solid rgba(0, 0, 0, 0.08);
-  background: #FFFFFF;
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-secondary);
   font-family: inherit;
   font-size: 0.875rem;
-  color: #1F2937;
+  color: var(--text-primary);
   outline: none;
   transition: all 0.2s ease;
 }
 
 .users-search-input:focus {
-  border-color: #000080;
+  border-color: var(--color-accent);
   box-shadow: 0 0 0 3px rgba(0, 0, 128, 0.08);
 }
 
@@ -57,11 +58,15 @@
 .table-responsive {
   width: 100%;
   overflow-x: auto;
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--bg-glass);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   border-top: 4px solid #FF9933; /* Saffron top border */
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-speed), border-color var(--transition-speed);
 }
 
 .users-table {
@@ -73,19 +78,19 @@
 .users-table th {
   padding: 16px 20px;
   background: rgba(0, 0, 128, 0.03);
-  color: #000080;
+  color: var(--color-accent);
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.02em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .users-table td {
   padding: 16px 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid var(--border-color);
   font-size: 0.9rem;
-  color: #374151;
+  color: var(--text-primary);
 }
 
 .user-table-row {
@@ -130,13 +135,13 @@
 
 .user-full-name {
   font-weight: 700;
-  color: #1F2937;
+  color: var(--text-primary);
   font-size: 0.95rem;
 }
 
 .user-username {
   font-size: 0.75rem;
-  color: #6B7280;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
@@ -157,7 +162,7 @@
 
 .cell-text {
   font-weight: 500;
-  color: #4B5563;
+  color: var(--text-secondary);
 }
 
 .company-text-container {
@@ -167,12 +172,12 @@
 
 .company-name-text {
   font-weight: 700;
-  color: #1F2937;
+  color: var(--text-primary);
 }
 
 .company-tagline-text {
   font-size: 0.75rem;
-  color: #6B7280;
+  color: var(--text-muted);
   font-style: italic;
   font-weight: 500;
 }
@@ -185,18 +190,18 @@
   gap: 12px;
   padding: 80px 24px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--bg-glass);
   border-radius: 16px;
-  border: 1.5px dashed rgba(0, 0, 0, 0.08);
+  border: 1.5px dashed var(--border-color);
 }
 
 .empty-directory-message h3 {
   font-size: 1.25rem;
-  color: #1F2937;
+  color: var(--text-primary);
 }
 
 .empty-directory-message p {
-  color: #6B7280;
+  color: var(--text-secondary);
   max-width: 400px;
 }
 
@@ -208,22 +213,26 @@
 }
 
 .user-mobile-card {
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--bg-glass);
   backdrop-filter: blur(10px);
   border-radius: 12px;
   padding: 16px;
   border-top: 3px solid #FF9933;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: var(--text-primary);
 }
 
 .mobile-card-header {
   display: flex;
   align-items: center;
   gap: 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 10px;
 }
 
@@ -238,14 +247,27 @@
   align-items: center;
   gap: 10px;
   font-size: 0.85rem;
-  color: #4B5563;
+  color: var(--text-secondary);
 }
 
 .mobile-detail-row span {
   font-weight: 500;
 }
 
-/* Media query for mobile responsive tables */
+/* Dark Mode specific overrides */
+:root.dark .users-search-input:focus {
+  border-color: var(--color-primary);
+}
+
+:root.dark .users-table th {
+  background: rgba(255, 153, 51, 0.05);
+  color: var(--color-primary);
+}
+
+:root.dark .cell-icon.navy-txt {
+  color: #6366F1; /* Indigo color for logo in dark mode for better visibility */
+}
+
 @media (max-width: 768px) {
   .table-responsive {
     display: none;
